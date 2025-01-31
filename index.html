@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" data-theme="light">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment_03_Category_0002</title>
+    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon" />
 
-    <!-- daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Google font -> Sora and poppins -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind CDN -->
+
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      .font_sora {
+        font-family: "Sora", serif;
+      }
+      .font_poppins {
+        font-family: "Poppins", serif;
+      }
+    </style>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              black_11: "#111111",
+              used_green: "#179800",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-0 p-0 font_sora">
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+      <!-- mobile navbar -->
+      <nav>
+        <div
+          class="flex justify-between border-b-2 border-solid border-[#179800]"
+        >
+          <div>
+            <img class="w-8 h-8" src="assets/leafs_logo.png" alt="" />
+          </div>
 
+          <div>
+            <img class="w-8 h-8" src="assets/hamburger_icon.png" alt="" />
+          </div>
+        </div>
+      </nav>
 
-</head>
-<body>
-    <h1 class="bg-black font-bold text-7xl text-lime-500">hello, World!!!</h1>
-    
-</body>
+      <!-- medium and large nav bar -->
+      <nav class="px-[140px] pt-6">
+        <div class="flex justify-between items-center">
+          <div class="flex-1">
+            <img src="assets/logo-header.png" alt="" />
+          </div>
+          <div class="mr-24">
+            <ul class="flex text-black_11 text-xl gap-8">
+              <li>Product</li>
+              <li>Services</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+
+          <div class="flex text-black_11 text-xl gap-2.5">
+            <button><i class="fa-solid fa-magnifying-glass mr-4"></i></button>
+            <button><i class="fa-solid fa-cart-shopping mr-4"></i></button>
+
+            <button
+              class="border border-solid border-used_green rounded-lg px-8 py-2.5"
+            >
+              Login
+            </button>
+            <button
+              class="bg-used_green text-white border border-solid border-used_green rounded-lg px-8 py-2.5"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <div class="flex flex-col justify-center items-center">
+        <!-- hero text -->
+        <div class="text-center w-[890px] mt-[90px] mb-10">
+          <h1 class="text-6xl text-black_11 font-semibold mb-8">
+            Freshness <span class="text-used_green">You Can</span> <br />
+            <span class="text-used_green">Count</span> On, Prices You’ll Love!
+          </h1>
+
+          <p class="text-xl text-black_11">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+
+        <!-- hero image -->
+        <div>
+          <img src="assets/hero-vegetables.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
