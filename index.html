@@ -37,6 +37,27 @@
         font-family: "Poppins", serif;
       }
 
+      /* animation */
+
+      .animation_move {
+        animation-duration: 3s;
+        animation-name: slide-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
+      /* hide nav bar */
       @media screen and (max-width: 640px) {
         .navbar {
           display: none;
@@ -133,7 +154,9 @@
             <span class="text-used_green">Count</span> On, Prices You’ll Love!
           </h1>
 
-          <p class="text-base font-light md:text-xl text-black_11">
+          <p
+            class="text-base font-light md:text-xl text-black_11 animation_move"
+          >
             Shop your daily essentials at unbeatable prices. From fresh produce
             to pantry staples, we’ve got you covered every day!
           </p>
@@ -233,26 +256,44 @@
       <!-- new added section -->
 
       <section>
-        <div class="rounded-2xl flex flex-col md:flex-row md:justify-between items-center mb-12 bg-used_gray mx-4 md:mx-[20px] lg:mx-[140px]">
+        <div
+          class="rounded-2xl flex flex-col md:flex-row md:justify-between items-center mb-12 bg-used_gray mx-4 md:mx-[20px] lg:mx-[140px]"
+        >
           <div class="flex justify-center flex-col w-[100%] md:w-[50%]">
-            <h3 class="sm:mt-4 text-used_green font-semibold text-2xl md:text-4xl text-center mb-4 lg:mb-8">VEGETABLES</h3>
-            <p class="text-black_11 font-light text-base md:text-xl text-center mb-2">Delivery: Saturday & Sunday</p>
-            <p class="text-black_11 font-light text-base md:text-xl text-center mb-2">Select your vegetables for delivery</p>
-            <p class="text-black_11 font-light text-base md:text-xl text-center mb-4">
+            <h3
+              class="sm:mt-4 text-used_green font-semibold text-2xl md:text-4xl text-center mb-4 lg:mb-8"
+            >
+              VEGETABLES
+            </h3>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center mb-2"
+            >
+              Delivery: Saturday & Sunday
+            </p>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center mb-2"
+            >
+              Select your vegetables for delivery
+            </p>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center mb-4"
+            >
               Next day delivery available if ordered before 2PM.
             </p>
           </div>
           <div class="w-[100%] md:w-[50%]">
-            <img class="w-[100%] rounded-b-2xl md:rounded-l-none md:rounded-r-2xl" src="assets/vegetables.jpg" alt="" />
+            <img
+              class="w-[100%] rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
+              src="assets/vegetables.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
       <!-- Popular Products Section -->
 
-      <section
-        class="bg-used_gray mx-0 px-4 py-8 md:px-[20px] md:pb-[140px]"
-      >
+      <section class="bg-used_gray mx-0 px-4 py-8 md:px-[20px] md:pb-[140px]">
         <h3
           class="font-semibold text-2xl md:text-3xl lg:text-4xl text-used_green mt-12 lg:mt-28 mb-8 md:mb-12"
         >
