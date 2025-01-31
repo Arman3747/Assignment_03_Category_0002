@@ -46,6 +46,7 @@
               clifford: "#da373d",
               black_11: "#111111",
               used_green: "#179800",
+              used_gray: "#EFEBE3",
             },
           },
         },
@@ -53,9 +54,10 @@
     </script>
   </head>
   <body class="m-0 p-0 font_sora">
+    <!-- header -->
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
       <!-- mobile navbar -->
-      <nav class="sm:inline lg:hidden md:hidden ">
+      <nav class="sm:inline lg:hidden md:hidden">
         <div
           class="flex justify-between border-b-2 border-solid border-[#179800]"
         >
@@ -71,10 +73,16 @@
 
       <!-- medium and large nav bar -->
       <nav class="sm:hidden md:inline">
-        <div class="flex justify-between items-center md:px-4 xl:px-[140px] md:pt-6">
-            <!-- part 1 -->
+        <div
+          class="flex justify-between items-center md:px-4 xl:px-[140px] md:pt-6"
+        >
+          <!-- part 1 -->
           <div class="flex-1">
-            <img class="w-[155px]" src="assets/logo-header.png" alt="logo_header" />
+            <img
+              class="w-[155px]"
+              src="assets/logo-header.png"
+              alt="logo_header"
+            />
           </div>
           <!-- part 2 -->
           <div class="lg:mr-24">
@@ -107,13 +115,14 @@
       <div class="flex flex-col justify-center items-center">
         <!-- hero text -->
         <div class="text-center lg:w-[950px] mt-[90px] mb-10 px-8">
-            
-          <h1 class="sm:text-3xl md:text-5xl lg:text-6xl text-black_11 font-semibold mb-8">
+          <h1
+            class="text-3xl md:text-5xl lg:text-6xl text-black_11 font-semibold mb-8"
+          >
             Freshness <span class="text-used_green">You Can</span> <br />
             <span class="text-used_green">Count</span> On, Prices You’ll Love!
           </h1>
 
-          <p class="sm:text-base sm:font-light md:text-xl text-black_11">
+          <p class="text-base font-light md:text-xl text-black_11">
             Shop your daily essentials at unbeatable prices. From fresh produce
             to pantry staples, we’ve got you covered every day!
           </p>
@@ -125,5 +134,89 @@
         </div>
       </div>
     </header>
+
+    <body>
+      <!-- Services section -->
+
+      <section class="my-12 mx-4 lg:mx-[140px]">
+        <h3
+          class="text-used_green font-semibold text-2xl md:text-4xl mb-8 md:mb-12"
+        >
+          Services
+        </h3>
+
+        <!-- car div -->
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6"
+        >
+          <!-- card 1 -->
+
+          <div
+            class="bg-used_gray flex flex-col justify-center items-center p-6 md:p-8 rounded-xl md:rounded-2xl"
+          >
+            <div class="bg-white rounded-full p-4">
+              <img src="assets/service.png" alt="" />
+            </div>
+
+            <h3
+              class="text-black_11 font-semibold text-xl md:text-2xl my-5 md:my-6"
+            >
+              24/7 Services
+            </h3>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center"
+            >
+              24/7 food delivery offers convenient, round-the-clock access to
+              your favorite meals anytime, day or night.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+
+          <div
+            class="bg-used_gray flex flex-col justify-center items-center p-6 md:p-8 rounded-xl md:rounded-2xl"
+          >
+            <div class="bg-white rounded-full p-4">
+              <img src="assets/delivery.png" alt="" />
+            </div>
+
+            <h3
+              class="text-black_11 font-semibold text-xl md:text-2xl my-5 md:my-6"
+            >
+              Fast Delivery
+            </h3>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center"
+            >
+              Fast delivery services bring fresh, nutritious vegetables directly
+              to your door, ensuring convenience and quality.
+            </p>
+          </div>
+
+          <!-- card 3 -->
+
+          <div
+            class="bg-used_gray flex flex-col justify-center items-center p-6 md:p-8 rounded-xl md:rounded-2xl"
+          >
+            <div class="bg-white rounded-full p-4">
+              <img src="assets/healthy.png" alt="" />
+            </div>
+
+            <h3
+              class="text-black_11 font-semibold text-xl md:text-2xl my-5 md:my-6"
+            >
+              Healthy Products
+            </h3>
+            <p
+              class="text-black_11 font-light text-base md:text-xl text-center"
+            >
+              Healthy products promote well-being, offering nutritious options
+              like organic foods, supplements, and natural remedies.
+            </p>
+          </div>
+        </div>
+      </section>
+    </body>
   </body>
 </html>
