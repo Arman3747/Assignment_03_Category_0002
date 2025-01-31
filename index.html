@@ -36,6 +36,12 @@
       .font_poppins {
         font-family: "Poppins", serif;
       }
+
+      @media screen and (max-width: 640px) {
+        .navbar {
+          display: none;
+        }
+      }
     </style>
 
     <script>
@@ -55,6 +61,7 @@
       };
     </script>
   </head>
+
   <body class="m-0 p-0 font_sora">
     <!-- header -->
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
@@ -74,7 +81,7 @@
       </nav>
 
       <!-- medium and large nav bar -->
-      <nav class="sm:hidden md:inline">
+      <nav class="sm:hidden md:inline navbar">
         <div
           class="flex justify-between items-center md:px-4 xl:px-[140px] md:pt-6"
         >
@@ -88,7 +95,7 @@
           </div>
           <!-- part 2 -->
           <div class="lg:mr-24">
-            <ul class="flex text-black_11 text-xl gap-8">
+            <ul class="flex text-black_11 text-xl md:gap-8">
               <li>Product</li>
               <li>Services</li>
               <li>Contact us</li>
@@ -96,7 +103,9 @@
           </div>
           <!-- part 3 -->
           <div class="flex text-black_11 text-xl gap-2.5">
-            <button><i class="fa-solid fa-magnifying-glass mr-4"></i></button>
+            <button>
+              <i class="fa-solid fa-magnifying-glass mr-4"></i>
+            </button>
             <button><i class="fa-solid fa-cart-shopping mr-4"></i></button>
 
             <button
@@ -137,6 +146,7 @@
       </div>
     </header>
 
+    <!-- main section -->
     <main>
       <!-- Services section -->
 
@@ -220,10 +230,28 @@
         </div>
       </section>
 
+      <!-- new added section -->
+
+      <section>
+        <div class="rounded-2xl flex flex-col md:flex-row md:justify-between items-center mb-12 bg-used_gray mx-4 md:mx-[20px] lg:mx-[140px]">
+          <div class="flex justify-center flex-col w-[100%] md:w-[50%]">
+            <h3 class="sm:mt-4 text-used_green font-semibold text-2xl md:text-4xl text-center mb-4 lg:mb-8">VEGETABLES</h3>
+            <p class="text-black_11 font-light text-base md:text-xl text-center mb-2">Delivery: Saturday & Sunday</p>
+            <p class="text-black_11 font-light text-base md:text-xl text-center mb-2">Select your vegetables for delivery</p>
+            <p class="text-black_11 font-light text-base md:text-xl text-center mb-4">
+              Next day delivery available if ordered before 2PM.
+            </p>
+          </div>
+          <div class="w-[100%] md:w-[50%]">
+            <img class="w-[100%] rounded-b-2xl md:rounded-l-none md:rounded-r-2xl" src="assets/vegetables.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
       <!-- Popular Products Section -->
 
       <section
-        class="bg-used_gray mx-0 px-4 py-12 md:px-[20px] md:pb-[140px] md:pt-[130px]"
+        class="bg-used_gray mx-0 px-4 py-8 md:px-[20px] md:pb-[140px]"
       >
         <h3
           class="font-semibold text-2xl md:text-3xl lg:text-4xl text-used_green mt-12 lg:mt-28 mb-8 md:mb-12"
