@@ -36,19 +36,6 @@
       .font_poppins {
         font-family: "Poppins", serif;
       }
-
-      /* .green_gradient {
-        /* background: rgb(83, 219, 58);
-        background: linear-gradient(
-            135deg,
-            rgba(83, 219, 58, 1) 0%,
-            rgba(255, 255, 255, 1) 100%
-          ),
-          url("./assets/vegetable-offer.png");
-
-        background-repeat: no-repeat;
-        background-position: bottom right;
-      } */
     </style>
 
     <script>
@@ -60,6 +47,8 @@
               black_11: "#111111",
               used_green: "#179800",
               used_gray: "#EFEBE3",
+              used_green_rice: "#115414",
+              used_blue_rice: "#102861",
             },
           },
         },
@@ -453,9 +442,73 @@
               </h4>
             </div>
           </div>
-
         </div>
+      </section>
 
+      <!-- arrival and offer -->
+
+      <section class="my-12 mx-4 md:my-[140px] md:mx-[140px]">
+        <div>
+          <h3
+            class="text-used_green text-2xl font-semibold md:text-4xl mb-8 md:mb-12"
+          >
+            Arrival & Offers
+          </h3>
+
+          <div
+            class="font_poppins grid grid-cols-1 lg:grid-cols-5 grid-flow-row gap-4"
+          >
+            <!-- green rice -->
+            <div
+              class="rounded-xl md:rounded-3xl bg-used_green_rice pt-6 pl-4 col-span-3 flex justify-around items-center"
+            >
+              <div class="pl-4 md:pl-10">
+                <img class="mt-6 md:mt-12" src="assets/dawat-logo.png" alt="" />
+                <button
+                  class="font-normal py-2 px-4 md:py-4 md:px-10 text-xs md:text-2xl bg-[#63B76D] rounded-lg md:rounded-2xl my-4 md:my-7 text-white"
+                >
+                  Cook Exotic Dishes
+                </button>
+                <h3 class="font-normal text-2xl md:text-4xl text-white">
+                  UP to <span class="font-bold"> 20% OFF</span>
+                </h3>
+              </div>
+
+              <div>
+                <img src="assets/dawat-mock-up.png" alt="" />
+              </div>
+            </div>
+
+            <!-- blue rice -->
+            <div
+              class="rounded-xl md:rounded-3xl bg-used_blue_rice pt-2 pl-4 col-span-2 flex justify-around items-center"
+            >
+              <div class="pl-4 md:pl-6">
+                <img
+                  class="mt-2 md:mt-4 w-[68px] md:w-[98px]"
+                  src="assets/india-gate-logo.png"
+                  alt=""
+                />
+                <button
+                  class="font-normal py-1 px-4 md:py-2 md:px-6 text-xs md:text-2xl bg-[#2A4D97] rounded-lg md:rounded-2xl my-2 md:my-6 text-white"
+                >
+                  World’s No.1 Rice
+                </button>
+                <h3 class="font-normal text-2xl md:text-4xl text-white">
+                  UP to <span class="font-bold"> 40% OFF</span>
+                </h3>
+              </div>
+
+              <div>
+                <img
+                  class="w-[120px] md:w-[175px]"
+                  src="assets/india-gate-mock-up.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </body>
   </body>
