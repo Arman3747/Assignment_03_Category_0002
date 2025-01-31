@@ -55,7 +55,7 @@
   <body class="m-0 p-0 font_sora">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
       <!-- mobile navbar -->
-      <nav>
+      <nav class="sm:inline lg:hidden md:hidden ">
         <div
           class="flex justify-between border-b-2 border-solid border-[#179800]"
         >
@@ -70,19 +70,21 @@
       </nav>
 
       <!-- medium and large nav bar -->
-      <nav class="px-[140px] pt-6">
-        <div class="flex justify-between items-center">
+      <nav class="sm:hidden md:inline">
+        <div class="flex justify-between items-center md:px-4 xl:px-[140px] md:pt-6">
+            <!-- part 1 -->
           <div class="flex-1">
-            <img src="assets/logo-header.png" alt="" />
+            <img class="w-[155px]" src="assets/logo-header.png" alt="logo_header" />
           </div>
-          <div class="mr-24">
+          <!-- part 2 -->
+          <div class="lg:mr-24">
             <ul class="flex text-black_11 text-xl gap-8">
               <li>Product</li>
               <li>Services</li>
               <li>Contact us</li>
             </ul>
           </div>
-
+          <!-- part 3 -->
           <div class="flex text-black_11 text-xl gap-2.5">
             <button><i class="fa-solid fa-magnifying-glass mr-4"></i></button>
             <button><i class="fa-solid fa-cart-shopping mr-4"></i></button>
@@ -104,13 +106,14 @@
       <!-- hero section -->
       <div class="flex flex-col justify-center items-center">
         <!-- hero text -->
-        <div class="text-center w-[890px] mt-[90px] mb-10">
-          <h1 class="text-6xl text-black_11 font-semibold mb-8">
+        <div class="text-center lg:w-[950px] mt-[90px] mb-10 px-8">
+            
+          <h1 class="sm:text-3xl md:text-5xl lg:text-6xl text-black_11 font-semibold mb-8">
             Freshness <span class="text-used_green">You Can</span> <br />
             <span class="text-used_green">Count</span> On, Prices You’ll Love!
           </h1>
 
-          <p class="text-xl text-black_11">
+          <p class="sm:text-base sm:font-light md:text-xl text-black_11">
             Shop your daily essentials at unbeatable prices. From fresh produce
             to pantry staples, we’ve got you covered every day!
           </p>
