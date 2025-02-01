@@ -29,7 +29,10 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- CSS style -->
+
     <style>
+      /* fonts */
       .font_sora {
         font-family: "Sora", serif;
       }
@@ -48,15 +51,18 @@
 
       @keyframes slide-in {
         from {
-          translate: 150vw 0;
-          scale: 200% 1;
+          translate: 0 10vh;
+          color: #ffffff;
+          scale: 105% 1;
         }
 
         to {
           translate: 0 0;
+          color: #000000;
           scale: 100% 1;
         }
       }
+
       /* hide nav bar */
       @media screen and (max-width: 640px) {
         .navbar {
@@ -64,6 +70,8 @@
         }
       }
     </style>
+
+    <!-- script -->
 
     <script>
       tailwind.config = {
